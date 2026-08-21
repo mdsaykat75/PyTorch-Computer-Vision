@@ -105,25 +105,7 @@ The script will:
 
 ## Model Architecture: TinyVGG
 
-```
-Input: (1 x 28 x 28) grayscale image
-
-Block 1:
-  Conv2d(1 -> 10, kernel=3, padding=1) -> ReLU
-  Conv2d(10 -> 10, kernel=3, padding=1) -> ReLU
-  MaxPool2d(2)
-  Output: (10 x 14 x 14)
-
-Block 2:
-  Conv2d(10 -> 10, kernel=3, padding=1) -> ReLU
-  Conv2d(10 -> 10, kernel=3, padding=1) -> ReLU
-  MaxPool2d(2)
-  Output: (10 x 7 x 7)
-
-Classifier:
-  Flatten -> Linear(490 -> 10)
-  Output: 10 class logits
-```
+![TinyVGG Architecture](model_architecture.png)
 
 | Design Choice | Reason |
 |---------------|--------|
