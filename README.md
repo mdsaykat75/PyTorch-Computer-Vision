@@ -108,7 +108,7 @@ The script will:
 
 ## Complete Code: `main.py`
 
-Copy the entire block below into a single file named `main.py`:
+
 
 ```python
 import struct
